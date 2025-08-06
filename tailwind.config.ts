@@ -28,23 +28,23 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#9b87f5',
+					DEFAULT: '#FF6B35',
 					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#1A1F2C',
-					foreground: '#E5DEFF'
+					DEFAULT: '#F8F9FA',
+					foreground: '#2C3E50'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
 				muted: {
-					DEFAULT: '#F8FAFC',
-					foreground: '#6B7280'
+					DEFAULT: '#F8F9FA',
+					foreground: '#6C757D'
 				},
 				accent: {
-					DEFAULT: '#D946EF',
+					DEFAULT: '#4834D4',
 					foreground: '#FFFFFF'
 				},
 				popover: {
@@ -53,7 +53,7 @@ export default {
 				},
 				card: {
 					DEFAULT: '#FFFFFF',
-					foreground: '#1F2937'
+					foreground: '#2C3E50'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -65,17 +65,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'neon': {
-					'purple': '#9b87f5',
-					'pink': '#D946EF',
-					'blue': '#0EA5E9',
-					'dark': '#1A1F2C',
-					'light': '#E5DEFF'
-				},
-				'gradient': {
-					'from': '#9b87f5',
-					'via': '#D946EF', 
-					'to': '#0EA5E9'
+				'brand': {
+					'orange': '#FF6B35',
+					'purple': '#4834D4',
+					'blue': '#0070F3',
+					'gray': '#6C757D',
+					'light': '#F8F9FA',
+					'dark': '#2C3E50'
 				}
 			},
 			borderRadius: {
