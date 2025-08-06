@@ -28,12 +28,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#2563EB',
+					DEFAULT: '#9b87f5',
 					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#F8FAFC',
-					foreground: '#1F2937'
+					DEFAULT: '#1A1F2C',
+					foreground: '#E5DEFF'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -44,7 +44,7 @@ export default {
 					foreground: '#6B7280'
 				},
 				accent: {
-					DEFAULT: '#2563EB',
+					DEFAULT: '#D946EF',
 					foreground: '#FFFFFF'
 				},
 				popover: {
@@ -65,10 +65,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'business': {
-					'blue': '#2563EB',
-					'gray': '#1F2937',
-					'light': '#F8FAFC'
+				'neon': {
+					'purple': '#9b87f5',
+					'pink': '#D946EF',
+					'blue': '#0EA5E9',
+					'dark': '#1A1F2C',
+					'light': '#E5DEFF'
+				},
+				'gradient': {
+					'from': '#9b87f5',
+					'via': '#D946EF', 
+					'to': '#0EA5E9'
 				}
 			},
 			borderRadius: {
@@ -92,11 +99,43 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow': {
+					'0%': { boxShadow: '0 0 5px #9b87f5, 0 0 10px #9b87f5, 0 0 15px #9b87f5' },
+					'50%': { boxShadow: '0 0 10px #D946EF, 0 0 20px #D946EF, 0 0 30px #D946EF' },
+					'100%': { boxShadow: '0 0 5px #9b87f5, 0 0 10px #9b87f5, 0 0 15px #9b87f5' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'slide-up': {
+					'0%': { transform: 'translateY(100px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
+				'rotate-3d': {
+					'0%': { transform: 'rotateY(0deg)' },
+					'100%': { transform: 'rotateY(360deg)' }
+				},
+				'pulse-neon': {
+					'0%, 100%': { 
+						boxShadow: '0 0 5px #9b87f5, 0 0 10px #9b87f5',
+						backgroundColor: '#9b87f5'
+					},
+					'50%': { 
+						boxShadow: '0 0 20px #D946EF, 0 0 40px #D946EF',
+						backgroundColor: '#D946EF'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'slide-up': 'slide-up 0.6s ease-out',
+				'rotate-3d': 'rotate-3d 10s linear infinite',
+				'pulse-neon': 'pulse-neon 2s ease-in-out infinite'
 			}
 		}
 	},
